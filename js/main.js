@@ -96,6 +96,11 @@
         CountDown
     --------------------*/
     // For demo preview
+
+
+
+
+    
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -113,7 +118,7 @@
     
 
     // Use this for real timer date
-    /*  var timerdate = "2020/01/01"; */
+    var timerdate = "2024/03/27"; 
 
 	$("#countdown").countdown(timerdate, function(event) {
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
